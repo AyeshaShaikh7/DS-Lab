@@ -48,8 +48,8 @@ void insertEnd() {
         while (temp->next != head)
             temp = temp->next;
 
-        temp->next = newnode;
         newnode->next = head;
+          temp->next = newnode;
     }
     printf("Inserted successfully.\n");
 }
